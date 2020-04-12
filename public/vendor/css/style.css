@@ -869,6 +869,12 @@ section.home.light .social-icons li a:hover {
 /*=================================================================*/
 /*                      PARALLAX SHAPES                              
 /*=================================================================*/
+@media(max-width:600px){
+  .mobile-hide{
+    display: none;
+  }
+}
+
 .parallax {
   position: absolute;
   left: 0;
@@ -1366,6 +1372,12 @@ select.portfolio-filter-mobile {
 }
 .scroll-down.light .mouse .wheel {
   background: #353353;
+}
+
+@media(max-width:600px){
+  .scroll-down {
+    bottom: 70px;
+  }
 }
 
 @-webkit-keyframes ani-mouse {
@@ -2295,7 +2307,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   section.home {
-    padding: 300px 0;
+    padding: 160px 0 300px;
   }
 
   .portfolio-filter {
@@ -2431,6 +2443,7 @@ body {
     display: none;
   }
 }
+
 @media only screen and (max-height: 667px) {
   header.desktop-header-2 .footer {
     margin-top: 100px;

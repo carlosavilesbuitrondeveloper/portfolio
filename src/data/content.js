@@ -1,6 +1,6 @@
 const SiteContent = {
     header: {
-      logo: "/img/logo-dark.svg",
+      logo: "/img/logo-dark.png",
       siteTitle: "Carlos Aviles Developer",
       footer: "2019 Carlos Developer",
       nav: [
@@ -34,17 +34,19 @@ const SiteContent = {
           isStatic: false,
           icon: "icon-layers"
         },
+        /*
+        {
+          label: "Code",
+          url: "https://github.com/carlosavilesbuitrondeveloper",
+          isStatic: true,
+          icon: "icon-social-github"
+        },
+        */
         {
           label: "Contact",
           url: "contact",
           isStatic: false,
           icon: "icon-bubbles"
-        },
-        {
-          label: "Code",
-          url: "index.html",
-          isStatic: true,
-          icon: "icon-social-github"
         }
       ]
     },
@@ -56,7 +58,7 @@ const SiteContent = {
       social: [
         {
           name: "github",
-          link: "https://github.com/CarlosAvilesBuitron",
+          link: "https://github.com/carlosavilesbuitrondeveloper",
           icon: "fa-github",
         },
         {
@@ -98,7 +100,7 @@ const SiteContent = {
           colorRGB: "rgb(108, 108, 229)",
         },
       ],
-      cvUrl: "https://www.portfolio.carlos-developer.com/files/Resume.pdf",
+      cvUrl: "https://cdn.carlos-developer.com/files/Resume.pdf",
       intro: "Welcome to my portfolio of projects in Front End & Back End development. I constantly study to improve my skills and expand the list of technologies I can use in my work.",
       img: "/img/avatar-2.svg"
     },
@@ -145,7 +147,7 @@ const SiteContent = {
     },
     expierience: {
       sectionTitle: "Experience & Education",
-      resume: "https://www.portfolio.carlos-developer.com/files/Resume.pdf",
+      resume: "https://cdn.carlos-developer.com/files/Resume.pdf",
       timeLineEdu: [
         {
           delay: "0s",

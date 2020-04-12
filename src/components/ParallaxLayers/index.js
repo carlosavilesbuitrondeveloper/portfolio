@@ -5,7 +5,7 @@ import {DiPostgresql, DiMongodb} from 'react-icons/di';
  
 const ParallaxLayers = () => {
     return (
-        <div className="parallax" data-relative-input="true" style={{ transform: 'translate3d(0px, 0px, 0px)', transformStyle: 'preserve-3d', backfaceVisibility: 'hidden' }}>
+        <div className="parallax mobile-hide" data-relative-input="true" style={{ transform: 'translate3d(0px, 0px, 0px)', transformStyle: 'preserve-3d', backfaceVisibility: 'hidden' }}>
             <FaAws width={15} height={23} data-depth="0.3" className="layer p1" style={{ transform: 'translate3d(-11.2175px, -326.871px, 0px)', transformStyle: 'preserve-3d', backfaceVisibility: 'hidden', position: 'absolute', display: 'block' }} />
             <FaJsSquare width={26} height={26} data-depth="0.2" className="layer p2" style={{ transform: 'translate3d(-7.47833px, -217.914px, 0px)', transformStyle: 'preserve-3d', backfaceVisibility: 'hidden', position: 'absolute', display: 'block' }} />
             <FaHtml5 width={30} height={25} data-depth="0.3" className="layer p3" style={{ transform: 'translate3d(-11.2175px, -326.871px, 0px)', transformStyle: 'preserve-3d', backfaceVisibility: 'hidden', position: 'absolute', display: 'block' }} />
