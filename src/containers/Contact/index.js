@@ -15,6 +15,9 @@ const Contact = ({content}) => {
         InputMessage: ''
     });
 
+    const[message, setMessage] = useState('');
+    const[done, setDone] = useState(false);
+
     const formInputs = [
         {
             type: "text",
@@ -73,7 +76,32 @@ const Contact = ({content}) => {
     
     const handleSubmit = (e) =>{
         e.preventDefault();
-        console.log(emailContent);
+
+        //check for data
+        const formData = Object.values(emailContent);
+        let isValid = true;
+
+        formData.forEach((value)=>{
+            if(!value){
+                isValid = false;
+            }
+        });
+
+        //check for email
+        if(!emailContent.InputEmail.includes('@')){
+            isValid = false;
+        }
+
+        //if form is not valid, do not post
+        if(!isValid){
+            console.log('Form is not properly filled out');
+            return;
+        }
+        
+        console.log('Post email');
+        setMessage('Thank you. I\'ll be in touch shortly.');
+        setDone(true);
+
     };
 
 
@@ -103,34 +131,36 @@ const Contact = ({content}) => {
                         <form id="contact-form" className="contact-form mt-6" noValidate={true} onSubmit={handleSubmit}>
 
                             {/* Message placeholder for response */}
-                            <div className="messages" />
+                            <div className="messages">{message}</div>
+                            
+                            {!done && (<>
+                                <LayoutRow>
 
-                            <LayoutRow>
+                                    {renderFormInputs()}
 
-                                {renderFormInputs()}
-
-                                <div className="column col-md-12">
-                                    {/* Message textarea */}
-                                    <div className="form-group">
-                                        <textarea 
-                                            name="InputMessage" 
-                                            id="InputMessage" 
-                                            className="form-control" 
-                                            rows={5} 
-                                            placeholder="Message" 
-                                            required="required" 
-                                            data-error="Message is required."
-                                            value={emailContent.InputMessage} 
-                                            onChange={handleChange}
-                                            />
-                                        <div className="help-block with-errors" />
+                                    <div className="column col-md-12">
+                                        {/* Message textarea */}
+                                        <div className="form-group">
+                                            <textarea 
+                                                name="InputMessage" 
+                                                id="InputMessage" 
+                                                className="form-control" 
+                                                rows={5} 
+                                                placeholder="Message" 
+                                                required="required" 
+                                                data-error="Message is required."
+                                                value={emailContent.InputMessage} 
+                                                onChange={handleChange}
+                                                />
+                                            <div className="help-block with-errors" />
+                                        </div>
                                     </div>
-                                </div>
 
-                            </LayoutRow>
+                                </LayoutRow>
 
-                            {/* Send Button */}
-                            <button type="submit" name="submit" id="submit" value="Submit" className="btn btn-default disabled">Send Message</button>
+                                {/* Send Button */}
+                                <button type="submit" name="submit" id="submit" value="Submit" className="btn btn-default disabled">Send Message</button>
+                            </>)}
 
                         </form>
 

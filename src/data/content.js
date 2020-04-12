@@ -166,20 +166,20 @@ const SiteContent = {
         {
           delay: "0s",
           time: '2020 - Present',
-          title: 'UX Developer',
+          title: 'UX Developer - Adorama',
           description: 'ReactJS focused developer. I code and implement new UI interfaces.'
         },
         {
           delay: "0.2s",
-          time: '2017 - 2013',
-          title: 'Software Developer',
-          description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.'
+          time: '2016 - 2019',
+          title: 'Cloud Developer - RKD Group',
+          description: 'I created a client facing web app to manage their user data and front-end elements.'
         },
         {
           delay: "0.4s",
-          time: '2019 - Present',
-          title: 'Front End Developer',
-          description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.'
+          time: '2016 - 2016',
+          title: 'Email Dev Contract - Live Nation',
+          description: 'I developed and tested concert tour emails that reached millions of customers.'
         }
       ]
     },
