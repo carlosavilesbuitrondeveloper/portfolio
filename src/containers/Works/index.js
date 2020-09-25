@@ -40,13 +40,13 @@ const Works = ({content}) => {
                                 <span className="more-button"><i className="icon-options" /></span>
                             </div>
                             <div className="thumb">
-                                <img src={process.env.PUBLIC_URL + item.thumb} alt={item.title} />
+                                <img src={item.thumb} alt={item.title} />
                                 <div className="mask" />
                             </div>
                         </div>
                     </a>
                     <div id={`${index}_dialog`} className="white-popup zoom-anim-dialog mfp-hide">
-                        <img src={process.env.PUBLIC_URL + item.modal.image} alt={item.title} />
+                        <img src={item.modal.image} alt={item.title} />
                         <h2>{item.modal.title}</h2>
                         <p>{`${item.modal.content}`}</p>
                         <a href={item.modal.link} className="btn btn-default">View Project</a>

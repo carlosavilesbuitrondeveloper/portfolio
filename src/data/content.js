@@ -58,7 +58,7 @@ const SiteContent = {
       social: [
         {
           name: "github",
-          link: "https://github.com/carlosavilesbuitrondeveloper",
+          link: "https://github.com/carlosavilesbuitron",
           icon: "fa-github",
         },
         {
@@ -100,7 +100,7 @@ const SiteContent = {
           colorRGB: "rgb(108, 108, 229)",
         },
       ],
-      cvUrl: "https://cdn.carlos-developer.com/files/Resume.pdf",
+      cvUrl: "https://cdn.carlos-developer.com/files/Resume2020.pdf",
       intro: "Welcome to my portfolio of projects in Front End & Back End development. I constantly study to improve my skills and expand the list of technologies I can use in my work.",
       img: "/img/avatar-2.svg"
     },
@@ -185,39 +185,130 @@ const SiteContent = {
     },
     works: {
       sectionTitle: "Portfolio",
-      categoryList: ["React", "Node", "Angular", "WordPress"],
+      categoryList: ["React", "Node", "SCSS", "AWS", "WordPress", "Luminate"],
       portfolioList: [
         {
-          itemType: ["react", "node"],
+          itemType: ["react", "scss"],
           modalType: "work-content",
-          category: "Node",
-          title: "Guest App Walkthrough Screens",
-          thumb: "/img/2.svg",
+          category: "React",
+          title: "Adorama Daily Deals",
+          thumb: "https://s3.us-east-1.amazonaws.com/public.carlos.developer/portfolio/adorama.jpg",
           modal: {
-            image: "/img/single-work.svg",
-            title: "Guest App Walkthrough Screens",
-            link: "https://pxltheme.com/html/bolby/demo/index-light.html#",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.",
+            image: "https://s3.us-east-1.amazonaws.com/public.carlos.developer/portfolio/adorama.jpg",
+            title: "Adorama Daily Deals",
+            link: "https://www.adorama.com/dailydeals",
+            content: "Daily deals page integrated with a .Net backend. Data is updated daily with a custom counter linked to an ecommerce api.",
+          }
+        },
+        {
+          itemType: ["react", "scss"],
+          modalType: "work-content",
+          category: "React",
+          title: "Donor Marketing Cloud",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/dmc-02.jpg",
+          modal: {
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/dmc-02.jpg",
+            title: "Donor Marketing Cloud",
+            link: "https://rkdgroup.com/donor-marketing-cloud/",
+            content: "A custom built donor platform and data manager. I built this app from scratch using a full stack JavaScript approach. It is hosted on the AWS cloud. This is app runs on serverless lambdas to cut down on cost and is deployed on a custom built code pipeline.",
+          }
+        },
+        {
+          itemType: ["react", "node", "aws"],
+          modalType: "work-content",
+          category: "React",
+          title: "American Bible Society",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/abs-03.jpg",
+          modal: {
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/abs-02.jpg",
+            title: "American Bible Society",
+            link: "https://share.americanbible.org/donate/?banner=ABS2019-02-001&pid=549&des=26cedd0f-0cdd-4e68-a678-0525f327536c&source=Web_SEM&utm_campaign=general-donate",
+            content: "The American Bible Society commisioned a form solution independant of any donation platforms. The form is hosted on AWS S3 and integrates with a custom built Braintree serverless backend.",
+          }
+        },
+        {
+          itemType: ["react", "aws", "wordpress"],
+          modalType: "work-content",
+          category: "React",
+          title: "St. Labre School",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/slis-03.jpg",
+          modal: {
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/slis-02.jpg",
+            title: "St. Labre School",
+            link: "https://give.stlabre.org/page/34979/donate/1?HEADER=SLISBWEB&CPID=19CRO&SRC=19BWEBBWEB&CHOSEN=20&_ga=2.46419236.2029518156.1569963641-1206028134.1569963641",
+            content: "Integrated Engaging Networks forms with AWS storage for front-end creative management. Their forms connect to their WordPress instance, and feed information back and forth for tracking/data enrichment.",
+          }
+        },
+        {
+          itemType: ["react", "aws"],
+          modalType: "work-content",
+          category: "Authorize.net",
+          title: "Los Angeles Mission",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/lam-02.jpg",
+          modal: {
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/lam-02.jpg",
+            title: "Los Angeles Mission",
+            link: "https://give.losangelesmission.org/production?cl=LAM&pg=hope&appeal=FY19-FACE&amt=35,50,75,100",
+            content: "Integrated with an Authorize.net for donation processing and donor data store. Their forms connect to their WordPress instance, and feed information back and forth for tracking/data enrichment.",
+          }
+        },
+        {
+          itemType: ["convio", "luminate"],
+          modalType: "work-content",
+          category: "Luminate Convio",
+          title: "Food Bank of New York",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/nyfb-02.jpg",
+          modal: {
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/nyfb-02.jpg",
+            title: "Food Bank of New York",
+            link: "https://secure3.convio.net/fbnyc/site/Donation2;jsessionid=00000000.app338b?df_id=7464&mfc_pref=T&7464.donation=form1&s_src=topmenu&_ga=2.132100102.805220615.1569963804-536450629.1569963804&NONCE_TOKEN=D6C4A57FB8DB4DF821287FBAB282FEC3",
+            content: "Donation forms built on the Luminate convio platform. These forms use Google Tag Manager to capture user events and display relevant content.",
+          }
+        },
+        {
+          itemType: ["convio", "luminate"],
+          modalType: "work-content",
+          category: "Luminate Convio",
+          title: "Houston Food Bank",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/hfb-02.jpg",
+          modal: {
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/hfb-02.jpg",
+            title: "Houston Food Bank",
+            link: "https://secure.houstonfoodbank.org/site/Donation2;jsessionid=00000000.app367b?df_id=8530&mfc_pref=T&8530.donation=form1&NONCE_TOKEN=9461B5618A758DA8553396246B803E2B",
+            content: "Donation forms built on the Luminate convio platform. These forms use Google Tag Manager to capture user events and display relevant content.",
           }
         },
         {
           itemType: ["react", "node"],
           modalType: "work-content",
-          category: "React",
-          title: "Guest App Walkthrough Screens",
-          thumb: "/img/2.svg",
+          category: "AWS Integration",
+          title: "SPCA of Texas",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/spca-02.jpg",
           modal: {
-            image: "/img/single-work.svg",
-            title: "Guest App Walkthrough Screens",
-            link: "https://pxltheme.com/html/bolby/demo/index-light.html#",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.",
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/spca-02.jpg",
+            title: "SPCA of Texas",
+            link: "https://secure.houstonfoodbank.org/site/Donation2;jsessionid=00000000.app367b?df_id=8530&mfc_pref=T&8530.donation=form1&NONCE_TOKEN=9461B5618A758DA8553396246B803E2B",
+            content: "SPCA ported their forms and donor data to the Donor Marketing Cloud. These forms were custom built to integrate with their user data and front-end content.",
+          }
+        },
+        {
+          itemType: ["aws", "Luminate"],
+          modalType: "work-content",
+          category: "GTM Integration",
+          title: "South Plains Food Bank",
+          thumb: "https://s3.amazonaws.com/public.carlos.developer/portfolio/spfb-02.jpg",
+          modal: {
+            image: "https://s3.amazonaws.com/public.carlos.developer/portfolio/spfb-02.jpg",
+            title: "South Plains Food Bank",
+            link: "https://donate.spfb.org/production?cl=SPFB&pg=main&amt=30,60,90,150&value=3&large=1000&chosen=60&source=top-right",
+            content: "Donation forms built on the Salsa platform. These forms use Google Tag Manager to capture user events and display relevant content.",
           }
         }
       ]
     },
     contact: {
       sectionTitle: "Get In Touch",
-      headline: "Let's talk about everything!",
+      headline: "Looking forward to working with you.",
       social: "LinkedIn",
       link: "https://www.linkedin.com/in/carlosavilesbuitron/"
     }
