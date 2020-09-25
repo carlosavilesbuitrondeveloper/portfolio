@@ -100,7 +100,7 @@ const SiteContent = {
           colorRGB: "rgb(108, 108, 229)",
         },
       ],
-      cvUrl: "https://cdn.carlos-developer.com/files/Resume2020.pdf",
+      cvUrl: "https://s3.amazonaws.com/cdn.carlos-developer.com/files/Resume2020.pdf",
       intro: "Welcome to my portfolio of projects in Front End & Back End development. I constantly study to improve my skills and expand the list of technologies I can use in my work.",
       img: "/img/avatar-2.svg"
     },
