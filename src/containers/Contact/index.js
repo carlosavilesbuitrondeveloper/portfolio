@@ -122,7 +122,7 @@ const Contact = ({content}) => {
                         <div className="contact-info text-center">
                             <h3>Email: <a href="mailto:info@carlos-developer.com">Info@Carlos-Developer.com</a></h3>
                             <h4 className="wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>{content.headline}</h4>
-                            <p className="wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>You can also fine me on <a href={content.link}>{content.social}</a>.</p>
+                            <p className="wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>You can also find me on <a href={content.link}>{content.social}</a>.</p>
                         </div>
                     </LayoutCol>
 
